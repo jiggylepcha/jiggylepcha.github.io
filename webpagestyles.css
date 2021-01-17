@@ -13,3 +13,11 @@ a:link {
   a:active {
     text-decoration: underline;
   }
+
+h3 {
+  font-family: 'Gentium Basic', serif;
+}
+
+h4 {
+  font-family: 'Gentium Basic', serif;
+}
