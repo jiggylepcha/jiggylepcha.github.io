@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Curriculum Vitae | Jigme Lobsang Lepcha</title>
   
-  <meta name="description" content="Official Curriculum Vitae of Jigme Lobsang Lepcha. MBA Candidate at IIM Kozhikode ('26), Incoming EY-Parthenon, ex-Senior Software Engineer at Nucleus Software.">
+  <meta name="description" content="Official Curriculum Vitae of Jigme Lobsang Lepcha. Consultant at EY-Parthenon (Building Products Practice), MBA from IIM Kozhikode, former Senior Software Engineer at Nucleus Software (41 months).">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./data/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./data/favicon-16x16.png">
@@ -13,29 +13,28 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,700;1,400&family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
 
-  <!-- Design System -->
   <link rel="stylesheet" href="./webpagestyles.css">
 </head>
 <body>
 
-  <!-- Site Navigation -->
+  <!-- Editorial Masthead Navigation -->
   <header class="site-nav">
     <div class="container nav-container">
-      <a href="./index.html" class="nav-brand">
-        <span class="brand-monogram">JL</span>
-        <span>Jigme Lepcha</span>
-      </a>
+      <div>
+        <a href="./index.html" class="nav-brand">Jigme Lobsang Lepcha</a>
+        <span class="nav-brand-title">Consultant, EY-Parthenon • Building Products</span>
+      </div>
 
       <nav>
         <ul class="nav-links" id="navLinks">
-          <li><a href="./index.html#about" class="nav-link">About</a></li>
+          <li><a href="./index.html#overview" class="nav-link">Overview</a></li>
           <li><a href="./index.html#experience" class="nav-link">Experience</a></li>
-          <li><a href="./projects.html" class="nav-link">Projects</a></li>
+          <li><a href="./projects.html" class="nav-link">Engagements</a></li>
           <li><a href="./index.html#education" class="nav-link">Education</a></li>
           <li><a href="./index.html#leadership" class="nav-link">Leadership</a></li>
-          <li><a href="./resume.html" class="nav-link active">Resume</a></li>
+          <li><a href="./resume.html" class="nav-link active">Curriculum Vitae</a></li>
           <li><a href="./contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -43,7 +42,7 @@
       <div class="nav-actions">
         <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle theme"></button>
         <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -55,113 +54,107 @@
 
   <main class="section">
     <div class="container">
-      <!-- Action Toolbar -->
-      <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 2rem;">
+      <!-- Toolbar -->
+      <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
         <div>
           <h1 class="section-title">Curriculum Vitae</h1>
-          <p class="section-subtitle">Updated executive resume reflecting IIM Kozhikode MBA, EY-Parthenon, and Nucleus Software experience.</p>
+          <p class="section-subtitle">Executive summary formatted to top-tier management consulting standards.</p>
         </div>
-        <div style="display: flex; gap: 0.75rem;">
-          <button onclick="window.print()" class="btn btn-primary btn-print">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-            Print / Save PDF
+        <div style="display: flex; gap: 0.5rem;">
+          <button onclick="window.print()" class="btn btn-primary btn-sm">
+            Print Document / Save PDF
           </button>
-          <a href="./data/Jigme_Academic_CV.pdf" download class="btn btn-secondary">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <a href="./data/Jigme_Academic_CV.pdf" download class="btn btn-secondary btn-sm">
             Download PDF
           </a>
         </div>
       </div>
 
-      <!-- CV Document Container -->
-      <div class="resume-container">
-        <!-- Resume Header -->
-        <div class="resume-header">
-          <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
+      <!-- CV Document Sheet -->
+      <div class="resume-paper">
+        <!-- Masthead -->
+        <div class="resume-masthead">
+          <div>
             <div class="resume-name font-serif">JIGME LEPCHA</div>
-            <div style="font-weight: 700; color: var(--accent-primary);">MBA, Batch 2024 – 2026 | 41 Months Experience</div>
+            <div class="resume-current-role">Consultant, EY-Parthenon — Building Products Practice</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem;">
+              MBA, Batch 2024–2026 | Indian Institute of Management Kozhikode (IIMK) • SPMC Member
+            </div>
           </div>
-          <div style="font-size: 0.95rem; font-weight: 600; color: var(--text-secondary); margin-top: 0.25rem;">
-            Indian Institute of Management Kozhikode (IIMK) | SPMC Member | Spot Award Winner
-          </div>
-          <div class="resume-contact-bar">
+          <div class="resume-meta-bar">
             <span><strong>Email:</strong> <a href="mailto:jigme.lepcha@iimk.ac.in">jigme.lepcha@iimk.ac.in</a></span>
             <span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jigmelepcha/" target="_blank" rel="noopener noreferrer">linkedin.com/in/jigmelepcha</a></span>
-            <span><strong>GitHub:</strong> <a href="https://github.com/jiggylepcha" target="_blank" rel="noopener noreferrer">github.com/jiggylepcha</a></span>
+            <span><strong>Location:</strong> India</span>
           </div>
         </div>
 
-        <!-- 1. Summer Internship -->
-        <div class="resume-section">
-          <div class="resume-section-title">Summer Internship</div>
-          
-          <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 0.35rem;">
-            <div style="font-size: 1.05rem; font-weight: 700;">EY-Parthenon — Summer Associate</div>
-            <div style="font-weight: 600; color: var(--text-muted);">Apr'25 – Jun'25</div>
-          </div>
-          
-          <div style="margin-bottom: 0.5rem; font-weight: 600; color: var(--accent-emerald);">
-            ★ Secured a Pre-Placement Offer (PPO) for demonstrating exceptional performance and delivering impactful outcomes
+        <!-- Section: Professional Experience -->
+        <div class="cv-section">
+          <div class="cv-heading">Professional Experience</div>
+
+          <!-- EY-Parthenon -->
+          <div style="margin-bottom: 1.5rem;">
+            <div class="cv-role-row">
+              <div class="cv-company">EY-Parthenon</div>
+              <div class="cv-dates">Apr 2025 – Present</div>
+            </div>
+            <div class="cv-title">Consultant (Building Products Practice) & Summer Associate</div>
+
+            <ul class="executive-bullets" style="margin-top: 0.5rem;">
+              <li><strong>Building Products Advisory:</strong> Formulating commercial strategies, market opportunity assessments, and operating model evaluations across the building materials, industrial products, and construction ecosystem.</li>
+              <li><strong>Private Equity CRM Vendor Evaluation:</strong> Evaluated 30+ CRM solutions for a premier India-based private equity fund to streamline deal sourcing, LP engagement, and post-deal asset monitoring.</li>
+              <li><strong>Procurement-Compliant RFP:</strong> Elevated evaluation efficiency by implementing a procurement-compliant RFP framework anchored across 100+ KPIs and 7 key dimensions.</li>
+              <li><strong>Scoring Architecture:</strong> Standardized vendor evaluation via a priority-aligned demo script codifying assessment across 7 dimensions; formulated a 7-parameter weighted scoring methodology for 5+ vendor demonstrations.</li>
+              <li><strong>Parity-Adjusted Framework:</strong> Developed a parity-adjusted scoring model leveraged across 18+ reference calls to systematically normalize reporting gaps.</li>
+              <li><strong>Executive Dashboards:</strong> Synthesized findings into 10+ operational dashboards and an end-to-end shortlist deck for the investment committee.</li>
+              <li><strong>Achievement:</strong> Awarded a <strong>Pre-Placement Offer (PPO)</strong> for exceptional analytical performance and measurable stakeholder impact.</li>
+            </ul>
           </div>
 
-          <div style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.35rem;">Project: CRM Vendor Evaluation for a Leading India-Based Private Equity Firm</div>
-          <ul class="timeline-list" style="margin-left: 0.5rem; margin-bottom: 0.75rem;">
-            <li>Evaluated 30+ CRM solutions for a PE firm to streamline deal sourcing, LP engagement, and post-deal monitoring.</li>
-            <li>Elevated assessment efficiency by implementing a procurement-compliant RFP framework anchored by 100+ KPIs.</li>
-            <li>Standardized vendor evaluation via a priority-aligned demo script that codified assessment across 7 key dimensions.</li>
-            <li>Enhanced executive visibility by developing 10+ dashboards that distilled evaluation findings into actionable insights.</li>
-            <li>Drove stakeholder confidence through a comprehensive deck articulating the evaluation methodology and shortlist.</li>
-            <li>Developed a parity-adjusted scoring model leveraged in 18+ reference calls to normalize gaps from unanswered questions.</li>
-            <li>Formulated a 7-parameter weighted scoring methodology for 5+ demos accelerating data-driven and bias-free evaluation.</li>
-          </ul>
+          <!-- Nucleus Software -->
+          <div style="margin-bottom: 1.5rem;">
+            <div class="cv-role-row">
+              <div class="cv-company">Nucleus Software Exports Ltd.</div>
+              <div class="cv-dates">Jan 2021 – Jun 2024 (41 Months)</div>
+            </div>
+            <div class="cv-title">Senior Software Engineer — Build Neo Engineering</div>
+            <div style="font-size: 0.8rem; font-weight: 500; color: var(--accent-gold); margin-top: 0.2rem;">
+              Promoted to Senior Software Engineer in 9 months through fast-track process for exemplary performance
+            </div>
+
+            <ul class="executive-bullets" style="margin-top: 0.5rem;">
+              <li><strong>Client Satisfaction:</strong> Increased customer satisfaction scores by 13% via the seamless global go-live of lending initiatives for leading NBFCs and tier-1 banks.</li>
+              <li><strong>Quality & Defect Elimination:</strong> Curtailed post-release bug reporting by 43% through structured 5-Why analysis, Root Cause Analysis (RCA), and preventative action protocols.</li>
+              <li><strong>Requirements Management:</strong> Resolved 100+ stakeholder priorities by gathering 30+ comprehensive product needs across 5+ client accounts.</li>
+              <li><strong>Data Migration Infrastructure:</strong> Developed and actively maintained 28+ migration scripts using SQL across 30+ production and service pack releases.</li>
+              <li><strong>Release Governance:</strong> Deployed 9+ service packs through structured user-story compilation, rigorous regression testing, and 100% compliance adherence.</li>
+              <li><strong>Team Enablement:</strong> Authored the operational Support Manual for FinnOne Neo Collections, and provided mentorship and guidance to 6+ junior software engineers.</li>
+            </ul>
+          </div>
+
+          <!-- Little Black Book -->
+          <div>
+            <div class="cv-role-row">
+              <div class="cv-company">Little Black Book</div>
+              <div class="cv-dates">May 2018 – Jul 2018</div>
+            </div>
+            <div class="cv-title">Software Engineering Intern — React Native</div>
+
+            <ul class="executive-bullets" style="margin-top: 0.4rem;">
+              <li>Reduced development cycle duration by 50% by building cross-platform 'Special Pages' using React Native for iOS and Android platforms.</li>
+            </ul>
+          </div>
         </div>
 
-        <!-- 2. Work Experience -->
-        <div class="resume-section">
-          <div class="resume-section-title">Work Experience (41 Months)</div>
-          
-          <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 0.25rem;">
-            <div style="font-size: 1.05rem; font-weight: 700;">Nucleus Software Exports Ltd. — Senior Software Engineer</div>
-            <div style="font-weight: 600; color: var(--text-muted);">Jan'21 – Jun'24 (41 Months)</div>
-          </div>
-
-          <div style="margin-bottom: 0.5rem; font-weight: 600; color: var(--accent-amber);">
-            ★ Earned a promotion to Senior Software Engineer in 9 months through a fast-track process for exemplary performance
-          </div>
-
-          <div style="font-weight: 600; color: var(--text-primary); margin: 0.5rem 0 0.25rem;">Senior Software Engineer, Build Neo Engineering</div>
-          <ul class="timeline-list" style="margin-left: 0.5rem; margin-bottom: 0.75rem;">
-            <li>Increased customer satisfaction scores by 13% via seamless go-live of global initiative for leading NBFCs and banks.</li>
-            <li>Curtailed bug reporting by 43% from previous releases through 5-Why, Root Cause Analysis (RCA) and action planning.</li>
-            <li>Managed 100+ stakeholder concerns by gathering 30+ comprehensive product needs from 5+ different customers.</li>
-          </ul>
-
-          <div style="font-weight: 600; color: var(--text-primary); margin: 0.5rem 0 0.25rem;">Software Engineer, Build Neo Engineering</div>
-          <ul class="timeline-list" style="margin-left: 0.5rem; margin-bottom: 0.75rem;">
-            <li>Developed and actively maintained 28+ migration scripts using SQL across 30+ production and service pack releases.</li>
-            <li>Deployed 9+ service packs through compiling of user stories, timely testing and ensuring 100% quality compliance.</li>
-            <li>Designed a Support Manual for FinnOne Neo Collections facilitating self-sufficiency with the Implementation team.</li>
-            <li>Provided mentorship, assistance and guidance to 6+ junior software engineers throughout their onboarding process.</li>
-          </ul>
-        </div>
-
-        <!-- 3. MBA Coursework -->
-        <div class="resume-section">
-          <div class="resume-section-title">MBA Coursework (Key Courses)</div>
-          <p style="font-size: 0.925rem; color: var(--text-secondary);">
-            Consulting • Corporate Valuation • Social Media Analytics • Investment Analysis & Portfolio Management • Equity Research • Project Management • Sales and Distribution Management • Investment Philosophies • Integrated Marketing Communication
-          </p>
-        </div>
-
-        <!-- 4. Academic Profile -->
-        <div class="resume-section">
-          <div class="resume-section-title">Academic Profile</div>
-          <table class="resume-table">
+        <!-- Section: Academic Profile -->
+        <div class="cv-section">
+          <div class="cv-heading">Academic Profile</div>
+          <table class="academic-table" style="margin-top: 0.5rem;">
             <thead>
               <tr>
-                <th>Degree / Certificate</th>
-                <th>Institute / School</th>
-                <th>Score / Grade</th>
+                <th>Degree / Examination</th>
+                <th>Institution</th>
+                <th>Grades / Score</th>
                 <th>Year</th>
               </tr>
             </thead>
@@ -169,7 +162,7 @@
               <tr>
                 <td><strong>MBA (PGP)</strong></td>
                 <td>Indian Institute of Management Kozhikode (IIMK)</td>
-                <td>Pursuing</td>
+                <td>Batch 2024–2026</td>
                 <td>2024 – 2026</td>
               </tr>
               <tr>
@@ -181,7 +174,7 @@
               <tr>
                 <td><strong>Class XII (ISC)</strong></td>
                 <td>St. Joseph's School, North Point, Darjeeling</td>
-                <td>90.80%</td>
+                <td>90.80% (Ranked 1st)</td>
                 <td>2014 – 2015</td>
               </tr>
               <tr>
@@ -194,47 +187,52 @@
           </table>
         </div>
 
-        <!-- 5. Awards & Achievements -->
-        <div class="resume-section">
-          <div class="resume-section-title">Awards & Achievements</div>
-          <ul class="timeline-list" style="margin-left: 0.5rem;">
-            <li><strong>Academic:</strong> Attained A grade amongst 300+ students in <em>Mobile Computing</em> and <em>Designing Human-Centered Systems</em> courses (2019).</li>
-            <li><strong>Merit:</strong> Ranked 1st and conferred with the <strong>Rector's Meritorious Award</strong> amongst 200+ students for academic excellence (2015).</li>
-            <li><strong>Excellence:</strong> Conferred Spot Award for high-impact organizational and academic contributions.</li>
+        <!-- Section: Key MBA Coursework -->
+        <div class="cv-section">
+          <div class="cv-heading">MBA Coursework (Key Disciplines)</div>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+            Management Consulting • Corporate Valuation • Social Media Analytics • Investment Analysis & Portfolio Management • Equity Research • Project Management • Sales and Distribution Management • Investment Philosophies • Integrated Marketing Communication
+          </p>
+        </div>
+
+        <!-- Section: Honors & Achievements -->
+        <div class="cv-section">
+          <div class="cv-heading">Honors & Academic Awards</div>
+          <ul class="executive-bullets">
+            <li><strong>Rector's Meritorious Award (2015):</strong> Ranked 1st amongst 200+ students and conferred with the Rector's Meritorious Award for academic excellence.</li>
+            <li><strong>Academic Distinction (2019):</strong> Attained Grade A amongst 300+ students in <em>Mobile Computing</em> and <em>Designing Human-Centered Systems</em> courses at IIIT Delhi.</li>
+            <li><strong>Corporate Recognition:</strong> Conferred Spot Award for impactful organizational contributions.</li>
           </ul>
         </div>
 
-        <!-- 6. Certifications, Internships & Projects -->
-        <div class="resume-section">
-          <div class="resume-section-title">Certifications, Internships & Projects</div>
-          <ul class="timeline-list" style="margin-left: 0.5rem;">
+        <!-- Section: Certifications & Live Projects -->
+        <div class="cv-section">
+          <div class="cv-heading">Certifications & Selected Projects</div>
+          <ul class="executive-bullets">
             <li>
-              <strong>KPMG (2024):</strong> Certification — Lean Six Sigma Green Belt. Applied DMAIC, SIPOC, Kaizen, and Power BI to drive process improvements and enhance operational efficiency.
+              <strong>KPMG (2024):</strong> Lean Six Sigma Green Belt Certification. Applied DMAIC, SIPOC, Kaizen, and Power BI to optimize operational flows and eliminate process bottlenecks.
             </li>
             <li>
-              <strong>Little Black Book (May'18 – Jul'18):</strong> Intern — React Native Developer. Reduced development time by 50% by building 'Special Pages' using React Native for iOS and Android platforms.
+              <strong>Corporate Valuation (IIM Kozhikode, 2025):</strong> Swiggy IPO Valuation. Executed multi-model valuation integrating DCF, relative multiples, option pricing, and VC method to assess fair market valuation.
             </li>
             <li>
-              <strong>Bharti AXA Life Insurance and Clix Capital (2025):</strong> Live Project in partnership with Havish M Consulting. Partnered with CHRO function to address 40%+ attrition; designed retention levers mitigating productivity risk.
+              <strong>Bharti AXA Life & Clix Capital (2025):</strong> Live project in partnership with Havish M Consulting. Partnered with CHRO function to address 40%+ attrition; designed retention levers mitigating productivity risk.
             </li>
             <li>
-              <strong>IIM Kozhikode (2025):</strong> Valuation of Swiggy IPO, Corporate Valuation. Executed multi-model valuation integrating DCF, relative analysis, option pricing and VC method to assess fair value.
-            </li>
-            <li>
-              <strong>IIIT Delhi (2018):</strong> Forest Fire Prediction Project. Achieved 99.4% accuracy using ML in detecting high-risk zones for forest fires based on real-time weather conditions.
+              <strong>IIIT Delhi (2018):</strong> Forest Fire Prediction Project. Achieved 99.4% accuracy using machine learning to detect high-risk zones based on meteorological conditions.
             </li>
           </ul>
         </div>
 
-        <!-- 7. Positions of Responsibility -->
-        <div class="resume-section">
-          <div class="resume-section-title">Positions of Responsibility</div>
-          <ul class="timeline-list" style="margin-left: 0.5rem;">
+        <!-- Section: Positions of Responsibility -->
+        <div class="cv-section">
+          <div class="cv-heading">Positions of Responsibility</div>
+          <ul class="executive-bullets">
             <li>
-              <strong>IIIT Delhi (2020):</strong> Football Coordinator, Sports Council. Managed a budget of INR 11 million and organized institute-wide intramurals with IPL-style bidding for 10+ teams and 150+ players.
+              <strong>IIIT Delhi Sports Council (2020):</strong> Football Coordinator. Managed an operating budget of INR 11 million; organized institute-wide intramurals with IPL-style live bidding auctions for 10+ franchises and 150+ student athletes.
             </li>
             <li>
-              <strong>IIIT Delhi (2019):</strong> Student Mentor, Student Mentorship Program. Provided guidance and support to a cohort of 6+ first-year students in their academics and extracurricular pursuits.
+              <strong>IIIT Delhi Student Mentorship Program (2019):</strong> Student Mentor. Provided academic guidance and extracurricular support to first-year undergraduate students.
             </li>
             <li>
               <strong>IIM Kozhikode:</strong> Senior Placement & Mentorship Committee (SPMC).
@@ -242,13 +240,13 @@
           </ul>
         </div>
 
-        <!-- 8. Extra-Curricular Activities -->
-        <div class="resume-section" style="margin-bottom: 0;">
-          <div class="resume-section-title">Extra-Curricular Activities & Interests</div>
-          <ul class="timeline-list" style="margin-left: 0.5rem;">
-            <li><strong>Quizzing (2025):</strong> Achieved 1st place in NMBA Quiz on occasion of UN's International Day Against Drug Abuse & Illicit Trafficking.</li>
-            <li><strong>Sports (2018):</strong> Played as a semi-professional footballer in the Adidas Creators League for Upstarts FC and Delhi Panthers FC.</li>
-            <li><strong>Social Service (2017):</strong> Educated 30+ youngsters from disadvantaged backgrounds in computer literacy and sports at IIITD's Summer Camp.</li>
+        <!-- Section: Extra-Curricular Activities -->
+        <div class="cv-section" style="margin-bottom: 0;">
+          <div class="cv-heading">Extra-Curricular Activities</div>
+          <ul class="executive-bullets">
+            <li><strong>Quizzing (2025):</strong> 1st place in the NMBA National Quiz on the occasion of UN's International Day Against Drug Abuse & Illicit Trafficking.</li>
+            <li><strong>Athletics (2018):</strong> Played as a semi-professional footballer in the Adidas Creators League for Upstarts FC and Delhi Panthers FC.</li>
+            <li><strong>Community Service (2017):</strong> Educated 30+ youngsters from disadvantaged backgrounds in computer literacy and sports at IIITD's Summer Camp.</li>
             <li><strong>Interests:</strong> Cycling, Fantasy Football, and Travelling.</li>
           </ul>
         </div>
@@ -257,17 +255,17 @@
     </div>
   </main>
 
-  <!-- Site Footer -->
+  <!-- Editorial Masthead Footer -->
   <footer class="site-footer">
     <div class="container footer-container">
       <div>
-        <p>© 2026 Jigme Lobsang Lepcha. Hosted on GitHub Pages.</p>
+        <p>© 2026 Jigme Lobsang Lepcha. Consultant, EY-Parthenon.</p>
       </div>
       <div class="footer-links">
-        <a href="./index.html#about">About</a>
+        <a href="./index.html#overview">Overview</a>
         <a href="./index.html#experience">Experience</a>
-        <a href="./projects.html">Projects</a>
-        <a href="./resume.html">Resume</a>
+        <a href="./projects.html">Engagements</a>
+        <a href="./resume.html">Curriculum Vitae</a>
         <a href="./contact.html">Contact</a>
       </div>
     </div>

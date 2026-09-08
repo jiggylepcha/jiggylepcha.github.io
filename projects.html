@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects & Case Studies | Jigme Lobsang Lepcha</title>
+  <title>Engagements & Case Studies | Jigme Lobsang Lepcha</title>
   
-  <meta name="description" content="Portfolio of consulting case studies, corporate valuations, enterprise software systems, and machine learning models by Jigme Lobsang Lepcha.">
+  <meta name="description" content="Selected management consulting engagements, corporate valuation models, and enterprise software systems by Jigme Lobsang Lepcha, Consultant at EY-Parthenon.">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./data/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./data/favicon-16x16.png">
@@ -13,29 +13,28 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,700;1,400&family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
 
-  <!-- Design System -->
   <link rel="stylesheet" href="./webpagestyles.css">
 </head>
 <body>
 
-  <!-- Site Navigation -->
+  <!-- Editorial Masthead Navigation -->
   <header class="site-nav">
     <div class="container nav-container">
-      <a href="./index.html" class="nav-brand">
-        <span class="brand-monogram">JL</span>
-        <span>Jigme Lepcha</span>
-      </a>
+      <div>
+        <a href="./index.html" class="nav-brand">Jigme Lobsang Lepcha</a>
+        <span class="nav-brand-title">Consultant, EY-Parthenon • Building Products</span>
+      </div>
 
       <nav>
         <ul class="nav-links" id="navLinks">
-          <li><a href="./index.html#about" class="nav-link">About</a></li>
+          <li><a href="./index.html#overview" class="nav-link">Overview</a></li>
           <li><a href="./index.html#experience" class="nav-link">Experience</a></li>
-          <li><a href="./projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="./projects.html" class="nav-link active">Engagements</a></li>
           <li><a href="./index.html#education" class="nav-link">Education</a></li>
           <li><a href="./index.html#leadership" class="nav-link">Leadership</a></li>
-          <li><a href="./resume.html" class="nav-link">Resume</a></li>
+          <li><a href="./resume.html" class="nav-link">Curriculum Vitae</a></li>
           <li><a href="./contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -43,7 +42,7 @@
       <div class="nav-actions">
         <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle theme"></button>
         <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -56,290 +55,215 @@
   <main class="section">
     <div class="container">
       <div class="section-header">
-        <div class="section-kicker">Portfolio & Engagements</div>
-        <h1 class="section-title">Projects & Case Studies</h1>
-        <p class="section-subtitle">A curated collection of private equity consulting frameworks, financial valuations, mission-critical FinTech engineering, and applied machine learning models.</p>
+        <div class="section-kicker">Case Portfolio</div>
+        <h1 class="section-title">Selected Engagements & Case Studies</h1>
+        <p class="section-subtitle">A review of strategic commercial evaluations, corporate valuation models, enterprise digital infrastructure, and applied machine learning algorithms.</p>
       </div>
 
-      <!-- Filter and Search Bar -->
+      <!-- Corporate Filter and Search Toolbar -->
       <div class="filter-bar">
         <div class="filter-buttons">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="consulting">Strategy & Consulting</button>
-          <button class="filter-btn" data-filter="finance">Corporate Valuation</button>
-          <button class="filter-btn" data-filter="software">Enterprise Software</button>
-          <button class="filter-btn" data-filter="ai">AI & Machine Learning</button>
+          <button class="filter-btn active" data-filter="all">All Cases</button>
+          <button class="filter-btn" data-filter="strategy">Commercial Strategy</button>
+          <button class="filter-btn" data-filter="valuation">Corporate Valuation</button>
+          <button class="filter-btn" data-filter="enterprise">Enterprise Systems</button>
+          <button class="filter-btn" data-filter="ai">Machine Learning</button>
         </div>
 
         <div class="filter-search-box">
-          <span class="search-icon">🔍</span>
-          <input type="text" id="projectSearchInput" class="filter-search-input" placeholder="Search by title, tool, or metric...">
+          <input type="text" id="projectSearchInput" class="filter-search-input" placeholder="Search by title, tool, or methodology...">
         </div>
       </div>
 
-      <!-- Projects Grid -->
-      <div class="projects-grid" id="projectsGrid">
+      <!-- Case Grid -->
+      <div class="case-grid" id="projectsGrid">
 
-        <!-- 1. EY-Parthenon CRM Evaluation -->
-        <div class="project-card" data-category="consulting">
+        <!-- Case 1: PE CRM Evaluation -->
+        <div class="case-card" data-category="strategy">
           <div>
-            <div class="project-meta">
-              <span class="project-category">Strategy & Consulting</span>
-              <span class="project-year">2025</span>
+            <div class="case-header">
+              <span class="case-kicker">Commercial Strategy</span>
+              <span class="case-year">2025</span>
             </div>
-            <h2 class="project-title">Private Equity CRM Transformation & Vendor RFP</h2>
-            <div class="project-org">EY-Parthenon (Summer Associate Project)</div>
-            <p class="project-desc">
-              Evaluated 30+ CRM platforms for a prominent India-based private equity firm to streamline deal pipeline management, LP relations, and portfolio company monitoring. Built an end-to-end procurement framework anchored by 100+ KPIs across 7 strategic dimensions, parity-adjusted reference scoring (18+ calls), and executive dashboards. Secured Pre-Placement Offer (PPO).
+            <h2 class="case-title">Private Equity CRM Evaluation & RFP Framework</h2>
+            <div class="case-client">EY-Parthenon Advisory Engagement</div>
+            <p class="case-desc">
+              Led the strategic vendor evaluation of 30+ enterprise CRM platforms for a prominent India-based private equity sponsor to institutionalize deal pipeline tracking, LP relationship management, and portfolio asset governance.
             </p>
-            <div class="project-tags">
-              <span class="project-tag">Private Equity</span>
-              <span class="project-tag">RFP Framework</span>
-              <span class="project-tag">100+ KPIs</span>
-              <span class="project-tag">Parity Scoring</span>
-              <span class="project-tag">Executive Dashboards</span>
+            <p class="case-desc">
+              Developed a procurement-compliant RFP framework anchored across 100+ KPIs across 7 dimensions, paired with a parity-adjusted scoring methodology utilized across 18+ reference calls and 10+ executive dashboards. Secured Pre-Placement Offer (PPO).
+            </p>
+            <div class="case-tags">
+              <span class="tag">Private Equity</span>
+              <span class="tag">RFP Framework</span>
+              <span class="tag">100+ KPIs</span>
+              <span class="tag">Parity Scoring</span>
             </div>
           </div>
-          <div class="project-footer">
-            <span class="badge badge-emerald">PPO Secured</span>
-            <span class="project-category">EY-Parthenon</span>
+          <div class="case-footer">
+            <span class="tag tag-highlight">PPO Secured</span>
+            <span class="case-client">EY-Parthenon</span>
           </div>
         </div>
 
-        <!-- 2. Swiggy IPO Valuation -->
-        <div class="project-card" data-category="finance">
+        <!-- Case 2: Swiggy IPO Valuation -->
+        <div class="case-card" data-category="valuation">
           <div>
-            <div class="project-meta">
-              <span class="project-category">Corporate Valuation</span>
-              <span class="project-year">2025</span>
+            <div class="case-header">
+              <span class="case-kicker">Corporate Valuation</span>
+              <span class="case-year">2025</span>
             </div>
-            <h2 class="project-title">Valuation of Swiggy IPO</h2>
-            <div class="project-org">IIM Kozhikode • Corporate Valuation Coursework</div>
-            <p class="project-desc">
-              Synthesized a comprehensive financial valuation model integrating Discounted Cash Flow (DCF), Comparable Company Multiples, Option Pricing Methods (OPM), and Venture Capital method to evaluate Swiggy's fair market value leading up to its public market listing. Analyzed quick-commerce unit economics and dark-store density dynamics.
+            <h2 class="case-title">Valuation of Swiggy IPO</h2>
+            <div class="case-client">IIM Kozhikode • Corporate Finance</div>
+            <p class="case-desc">
+              Developed a rigorous multi-model corporate valuation analyzing fair market value ahead of Swiggy's initial public offering.
             </p>
-            <div class="project-tags">
-              <span class="project-tag">DCF Analysis</span>
-              <span class="project-tag">Relative Valuation</span>
-              <span class="project-tag">Option Pricing</span>
-              <span class="project-tag">VC Valuation</span>
-              <span class="project-tag">Quick Commerce</span>
+            <p class="case-desc">
+              Integrated Discounted Cash Flow (DCF), Comparable Company Multiples, Option Pricing Methodology (OPM), and Venture Capital valuation method. Modeled quick commerce dark-store expansion dynamics, unit delivery margins, and path-to-profitability scenarios.
+            </p>
+            <div class="case-tags">
+              <span class="tag">DCF Modeling</span>
+              <span class="tag">Relative Multiples</span>
+              <span class="tag">Option Pricing</span>
+              <span class="tag">VC Method</span>
             </div>
           </div>
-          <div class="project-footer">
-            <span class="badge badge-blue">Financial Modeling</span>
-            <span class="project-category">IIM Kozhikode</span>
+          <div class="case-footer">
+            <span class="tag">Corporate Finance</span>
+            <span class="case-client">IIM Kozhikode</span>
           </div>
         </div>
 
-        <!-- 3. Bharti AXA & Clix Capital -->
-        <div class="project-card" data-category="consulting">
+        <!-- Case 3: Bharti AXA & Clix Capital -->
+        <div class="case-card" data-category="strategy">
           <div>
-            <div class="project-meta">
-              <span class="project-category">Strategy & Consulting</span>
-              <span class="project-year">2025</span>
+            <div class="case-header">
+              <span class="case-kicker">Workforce Strategy</span>
+              <span class="case-year">2025</span>
             </div>
-            <h2 class="project-title">Employee Retention Levers & Attrition Strategy</h2>
-            <div class="project-org">Bharti AXA Life & Clix Capital (Havish M Consulting Live Project)</div>
-            <p class="project-desc">
-              Partnered with senior leadership and the CHRO function to tackle 40%+ attrition rates across critical business divisions. Conducted root-cause analytics across tenure, compensation benchmarks, and management spans to formulate predictive retention levers and productivity preservation roadmaps.
+            <h2 class="case-title">Human Capital Retention & Turnover Levers</h2>
+            <div class="case-client">Bharti AXA Life & Clix Capital (Havish M Consulting)</div>
+            <p class="case-desc">
+              Partnered with the Chief Human Resources Officer (CHRO) function to investigate root causes behind 40%+ employee turnover across critical business divisions.
             </p>
-            <div class="project-tags">
-              <span class="project-tag">People Strategy</span>
-              <span class="project-tag">CHRO Advisory</span>
-              <span class="project-tag">Attrition Risk</span>
-              <span class="project-tag">Retention Levers</span>
+            <p class="case-desc">
+              Conducted empirical employee tenure and compensation benchmarking, designing strategic retention levers and productivity risk mitigation roadmaps.
+            </p>
+            <div class="case-tags">
+              <span class="tag">CHRO Advisory</span>
+              <span class="tag">Attrition Modeling</span>
+              <span class="tag">People Strategy</span>
             </div>
           </div>
-          <div class="project-footer">
-            <span class="badge badge-purple">Live Consulting</span>
-            <span class="project-category">Havish M Consulting</span>
+          <div class="case-footer">
+            <span class="tag">Consulting Project</span>
+            <span class="case-client">Havish M Consulting</span>
           </div>
         </div>
 
-        <!-- 4. Nucleus Software FinnOne Neo Migration Suite -->
-        <div class="project-card" data-category="software">
+        <!-- Case 4: FinnOne Neo Enterprise Migrations -->
+        <div class="case-card" data-category="enterprise">
           <div>
-            <div class="project-meta">
-              <span class="project-category">Enterprise Software</span>
-              <span class="project-year">2021 – 2024</span>
+            <div class="case-header">
+              <span class="case-kicker">Enterprise Systems</span>
+              <span class="case-year">2021 – 2024</span>
             </div>
-            <h2 class="project-title">FinnOne Neo Collections Core Engine & Migration Pipelines</h2>
-            <div class="project-org">Nucleus Software Exports Ltd.</div>
-            <p class="project-desc">
-              Architected and maintained 28+ mission-critical SQL database migration scripts deployed across 30+ production and service pack releases for premier banks and NBFCs. Implemented 5-Why and Root Cause Analysis (RCA) to cut release bug reports by 43% and increase customer satisfaction scores by 13%.
+            <h2 class="case-title">Core Banking Lending Infrastructure & Database Migrations</h2>
+            <div class="case-client">Nucleus Software Exports Ltd.</div>
+            <p class="case-desc">
+              Developed and maintained 28+ mission-critical SQL database migration scripts deployed across 30+ enterprise production and service pack releases for premier tier-1 banks and NBFCs.
             </p>
-            <div class="project-tags">
-              <span class="project-tag">FinTech</span>
-              <span class="project-tag">SQL Migrations</span>
-              <span class="project-tag">Core Banking</span>
-              <span class="project-tag">RCA / 5-Why</span>
-              <span class="project-tag">Release Engineering</span>
+            <p class="case-desc">
+              Led root-cause problem solving via 5-Why analysis to curtail post-release defects by 43% and boost client satisfaction metrics by 13%. Authored the FinnOne Neo Collections Support Manual and mentored 6+ junior engineers.
+            </p>
+            <div class="case-tags">
+              <span class="tag">SQL Migration</span>
+              <span class="tag">Core Banking</span>
+              <span class="tag">FinnOne Neo</span>
+              <span class="tag">RCA / 5-Why</span>
             </div>
           </div>
-          <div class="project-footer">
-            <span class="badge badge-amber">41 Months Impact</span>
-            <span class="project-category">Nucleus Software</span>
+          <div class="case-footer">
+            <span class="tag">41 Months Experience</span>
+            <span class="case-client">Nucleus Software</span>
           </div>
         </div>
 
-        <!-- 5. Forest Fire Prediction -->
-        <div class="project-card" data-category="ai">
+        <!-- Case 5: Forest Fire Prediction -->
+        <div class="case-card" data-category="ai">
           <div>
-            <div class="project-meta">
-              <span class="project-category">AI & Machine Learning</span>
-              <span class="project-year">2018</span>
+            <div class="case-header">
+              <span class="case-kicker">Machine Learning</span>
+              <span class="case-year">2018</span>
             </div>
-            <h2 class="project-title">Forest Fire Prediction Web Platform</h2>
-            <div class="project-org">IIIT Delhi Research & Engineering</div>
-            <p class="project-desc">
-              Trained and deployed a machine learning model capable of predicting and classifying high-risk forest fire outbreak zones with 99.4% accuracy based on real-time atmospheric conditions, temperature, humidity, and wind patterns.
+            <h2 class="case-title">Forest Fire Risk Prediction Engine</h2>
+            <div class="case-client">IIIT Delhi Research & Engineering</div>
+            <p class="case-desc">
+              Trained and deployed a machine learning model capable of classifying and predicting high-risk forest fire zones based on live meteorological data with 99.4% classification accuracy.
             </p>
-            <div class="project-tags">
-              <span class="project-tag">Machine Learning</span>
-              <span class="project-tag">Python</span>
-              <span class="project-tag">99.4% Accuracy</span>
-              <span class="project-tag">Meteorological Data</span>
+            <div class="case-tags">
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Python</span>
+              <span class="tag">99.4% Accuracy</span>
             </div>
           </div>
-          <div class="project-footer">
-            <a href="https://github.com/vishaal27/ForestFirePrediction" target="_blank" rel="noopener noreferrer" class="project-link">
+          <div class="case-footer">
+            <a href="https://github.com/vishaal27/ForestFirePrediction" target="_blank" rel="noopener noreferrer" class="case-link">
               GitHub Repository ↗
             </a>
-            <span class="project-category">IIIT Delhi</span>
+            <span class="case-client">IIIT Delhi</span>
           </div>
         </div>
 
-        <!-- 6. Eye Gaze Controlled Keyboard -->
-        <div class="project-card" data-category="ai">
+        <!-- Case 6: Eye Gaze Controlled Keyboard -->
+        <div class="case-card" data-category="ai">
           <div>
-            <div class="project-meta">
-              <span class="project-category">AI & Machine Learning</span>
-              <span class="project-year">2019</span>
+            <div class="case-header">
+              <span class="case-kicker">Assistive Systems</span>
+              <span class="case-year">2019</span>
             </div>
-            <h2 class="project-title">Eye Gaze Controlled Virtual Keyboard</h2>
-            <div class="project-org">IIIT Delhi • Human-Centered Systems (Grade A)</div>
-            <p class="project-desc">
-              Engineered an assistive human-computer typing interface using computer vision to track ocular gaze coordinates and deliberate eye-blink triggers, providing a hands-free communication tool for individuals with motor disabilities.
+            <h2 class="case-title">Eye Gaze Controlled Virtual Typing Interface</h2>
+            <div class="case-client">IIIT Delhi • Human-Centered Systems (Grade A)</div>
+            <p class="case-desc">
+              Engineered a computer vision interface that maps ocular gaze coordinates and intentional blink triggers into keystrokes, providing an accessible communication platform for individuals with motor disabilities.
             </p>
-            <div class="project-tags">
-              <span class="project-tag">Computer Vision</span>
-              <span class="project-tag">OpenCV</span>
-              <span class="project-tag">Assistive Tech</span>
-              <span class="project-tag">Human-Centered Systems</span>
+            <div class="case-tags">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Python</span>
             </div>
           </div>
-          <div class="project-footer">
-            <a href="https://github.com/jiggylepcha/gaze-controlled-keyboard" target="_blank" rel="noopener noreferrer" class="project-link">
+          <div class="case-footer">
+            <a href="https://github.com/jiggylepcha/gaze-controlled-keyboard" target="_blank" rel="noopener noreferrer" class="case-link">
               GitHub Repository ↗
             </a>
-            <span class="project-category">IIIT Delhi</span>
+            <span class="case-client">IIIT Delhi</span>
           </div>
         </div>
 
-        <!-- 7. Loan Application Software -->
-        <div class="project-card" data-category="software">
+        <!-- Case 7: Enterprise Loan Origination System -->
+        <div class="case-card" data-category="enterprise">
           <div>
-            <div class="project-meta">
-              <span class="project-category">Enterprise Software</span>
-              <span class="project-year">2021</span>
+            <div class="case-header">
+              <span class="case-kicker">Enterprise Systems</span>
+              <span class="case-year">2021</span>
             </div>
-            <h2 class="project-title">Enterprise Loan Origination System</h2>
-            <div class="project-org">Nucleus Software Training Program</div>
-            <p class="project-desc">
-              Developed a full-stack loan origination and approval platform utilizing Spring Boot, Hibernate ORM, and relational database schemas to simulate end-to-end retail banking credit assessment workflows.
+            <h2 class="case-title">Enterprise Retail Loan Origination Platform</h2>
+            <div class="case-client">Nucleus Software Training Program</div>
+            <p class="case-desc">
+              Architected a full-stack loan origination and credit assessment system using Spring Boot and Hibernate ORM to model multi-stage retail banking approval workflows.
             </p>
-            <div class="project-tags">
-              <span class="project-tag">Java</span>
-              <span class="project-tag">Spring MVC</span>
-              <span class="project-tag">Hibernate</span>
-              <span class="project-tag">Relational DB</span>
+            <div class="case-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring MVC</span>
+              <span class="tag">Hibernate</span>
             </div>
           </div>
-          <div class="project-footer">
-            <a href="https://github.com/kanavbhagat/NucleusProject" target="_blank" rel="noopener noreferrer" class="project-link">
+          <div class="case-footer">
+            <a href="https://github.com/kanavbhagat/NucleusProject" target="_blank" rel="noopener noreferrer" class="case-link">
               GitHub Repository ↗
             </a>
-            <span class="project-category">Nucleus Software</span>
-          </div>
-        </div>
-
-        <!-- 8. Dishcounts Android Application -->
-        <div class="project-card" data-category="software">
-          <div>
-            <div class="project-meta">
-              <span class="project-category">Enterprise Software</span>
-              <span class="project-year">2018</span>
-            </div>
-            <h2 class="project-title">Dishcounts Coupon Management App</h2>
-            <div class="project-org">Independent Mobile Development</div>
-            <p class="project-desc">
-              An Android application that intercepts and parses promotional SMS messages from dining and retail merchants, categorizing coupons by expiration date, discount amount, and brand.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Android</span>
-              <span class="project-tag">Java</span>
-              <span class="project-tag">SMS Parsing</span>
-              <span class="project-tag">Mobile UX</span>
-            </div>
-          </div>
-          <div class="project-footer">
-            <a href="https://github.com/jiggylepcha/Dishcounts" target="_blank" rel="noopener noreferrer" class="project-link">
-              GitHub Repository ↗
-            </a>
-            <span class="project-category">Android</span>
-          </div>
-        </div>
-
-        <!-- 9. Workout Effectiveness Classifier -->
-        <div class="project-card" data-category="ai">
-          <div>
-            <div class="project-meta">
-              <span class="project-category">AI & Machine Learning</span>
-              <span class="project-year">2018</span>
-            </div>
-            <h2 class="project-title">Workout Effectiveness Classifier</h2>
-            <div class="project-org">IIIT Delhi Machine Learning Lab</div>
-            <p class="project-desc">
-              Applied machine learning classification models to motion and sensor metrics, identifying exercise routines and scoring execution posture and workout effectiveness.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Machine Learning</span>
-              <span class="project-tag">Motion Sensor Data</span>
-              <span class="project-tag">Python</span>
-            </div>
-          </div>
-          <div class="project-footer">
-            <a href="https://github.com/vishaal27/WorkoutEffectiveness" target="_blank" rel="noopener noreferrer" class="project-link">
-              GitHub Repository ↗
-            </a>
-            <span class="project-category">IIIT Delhi</span>
-          </div>
-        </div>
-
-        <!-- 10. Raspberry Pi Smart Alarm Clock -->
-        <div class="project-card" data-category="software">
-          <div>
-            <div class="project-meta">
-              <span class="project-category">Enterprise Software</span>
-              <span class="project-year">2018</span>
-            </div>
-            <h2 class="project-title">Raspberry Pi Smart Alarm Clock</h2>
-            <div class="project-org">Embedded Systems Project</div>
-            <p class="project-desc">
-              Built an interactive hardware alarm system utilizing a Raspberry Pi, integrating custom network schedules, auditory wake sequences, and sensor triggers.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Raspberry Pi</span>
-              <span class="project-tag">Python</span>
-              <span class="project-tag">IoT / Hardware</span>
-            </div>
-          </div>
-          <div class="project-footer">
-            <a href="https://github.com/jiggylepcha/SmartAlarm" target="_blank" rel="noopener noreferrer" class="project-link">
-              GitHub Repository ↗
-            </a>
-            <span class="project-category">Embedded IoT</span>
+            <span class="case-client">Nucleus Software</span>
           </div>
         </div>
 
@@ -347,17 +271,17 @@
     </div>
   </main>
 
-  <!-- Site Footer -->
+  <!-- Editorial Masthead Footer -->
   <footer class="site-footer">
     <div class="container footer-container">
       <div>
-        <p>© 2026 Jigme Lobsang Lepcha. Hosted on GitHub Pages.</p>
+        <p>© 2026 Jigme Lobsang Lepcha. Consultant, EY-Parthenon.</p>
       </div>
       <div class="footer-links">
-        <a href="./index.html#about">About</a>
+        <a href="./index.html#overview">Overview</a>
         <a href="./index.html#experience">Experience</a>
-        <a href="./projects.html">Projects</a>
-        <a href="./resume.html">Resume</a>
+        <a href="./projects.html">Engagements</a>
+        <a href="./resume.html">Curriculum Vitae</a>
         <a href="./contact.html">Contact</a>
       </div>
     </div>
