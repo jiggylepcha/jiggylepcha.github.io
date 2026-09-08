@@ -5,13 +5,13 @@
    ========================================================================== */
 
 :root {
-  /* Editorial Corporate Palette - Light (Default) */
+  /* Editorial Corporate Palette - Pure White Background */
   --bg-primary: #FFFFFF;
-  --bg-secondary: #F9FAFB;
+  --bg-secondary: #FFFFFF;
   --bg-card: #FFFFFF;
-  --bg-card-hover: #F8FAFC;
-  --bg-subtle: #F3F4F6;
-  --bg-badge: #F1F5F9;
+  --bg-card-hover: #FAFAFA;
+  --bg-subtle: #FAFAFA;
+  --bg-badge: #F4F4F5;
 
   --border-subtle: #E5E7EB;
   --border-medium: #D1D5DB;

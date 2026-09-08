@@ -4,11 +4,10 @@
  * clipboard actions, and structured case study filtering.
  */
 
-// Theme Management
+// Theme Management - Default to clean corporate white background
 (function initTheme() {
   const savedTheme = localStorage.getItem('theme');
-  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+  const initialTheme = savedTheme === 'dark' ? 'dark' : 'light';
   document.documentElement.setAttribute('data-theme', initialTheme);
 })();
 
