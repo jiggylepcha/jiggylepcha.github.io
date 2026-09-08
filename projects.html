@@ -1,72 +1,368 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <link href="./webpagestyles.css" rel="stylesheet">
-        <link rel="icon" type="image/png" href="./data/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="./data/favicon-16x16.png" sizes="16x16" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects & Case Studies | Jigme Lobsang Lepcha</title>
+  
+  <meta name="description" content="Portfolio of consulting case studies, corporate valuations, enterprise software systems, and machine learning models by Jigme Lobsang Lepcha.">
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./data/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./data/favicon-16x16.png">
 
-        <title>Projects</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-light col-8 offset-2 mt-5">
-            <div class="container">
-                <a class="navbar-brand" href="./index.html"><h3>Jigme Lobsang Lepcha</h3></a>
-                <div class="d-flex justify-content-start">
-                    <a style="color: #D44F4F; margin-right: 10;" href="./index.html">About</a> • 
-                    <a style="color: #D44F4F; margin-right: 10; margin-left: 10;" href="./data/Jigme_Academic_CV.pdf">Resume</a> • 
-                    <a style="color: #D44F4F; margin-left: 10; margin-right: 10;" href="./projects.html">Projects</a> • 
-                    <a style="color: #D44F4F; margin-left: 10;" href="./contact.html">Contact</a>
-                </div>
-            </div>
-        </nav>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-        <hr/>
+  <!-- Design System -->
+  <link rel="stylesheet" href="./webpagestyles.css">
+</head>
+<body>
 
-        <div class="col-8 offset-2">
-            <div class="container-fluid">
-                <h4>Projects</h4>
-                <p>Here are some of my projects that I am fairly proud of:</p>
-                <ul>
-                    <li>
-                        <a style="color: #D44F4F;" href="https://github.com/kanavbhagat/NucleusProject">Loan Application Software</a>:
-                        A loan application system built by me and a few <a style="color: #D44F4F;" href="https://github.com/kanavbhagat/NucleusProject/graphs/contributors">others</a> using Spring and Hibernate as a part 
-                        of my training program at Nucleus.</li>
-                    <li>
-                        <a style="color: #D44F4F;" href="https://github.com/jiggylepcha/Dishcounts">Dishcounts</a>:
-                        An Android application which manages coupons sent to the user via SMS.
-                    </li>
-                    <li>
-                        <a style="color: #D44F4F;" href="https://github.com/jiggylepcha/gaze-controlled-keyboard">Eye Gaze Controlled Keyboard</a>:
-                        A virtual typing interfact which works via tracking the user's eye gaze and eye blinking.
-                    </li>
-                    <li>
-                        <a style="color: #D44F4F;" href="https://github.com/vishaal27/WorkoutEffectiveness">Workout Effectiveness</a>:
-                        Various machine learning algorithms which can identify the exercise being perfomed and it's effectiveness.
-                    </li>
-                    <li>
-                        <a style="color: #D44F4F;" href="https://github.com/vishaal27/ForestFirePrediction">Forest Fire Prediction</a>:
-                        A web application which can predict areas where forest fires are likely to occur using current weather data.
-                    </li>
-                    <li>
-                        <a style="color: #D44F4F;" href="https://github.com/jiggylepcha/SmartAlarm">Smart Alarm Clock</a>:
-                        Converted a Raspberry Pi into a smart (sort of) alarm clock.
-                    </li>
-                </ul>
-            </div>
+  <!-- Site Navigation -->
+  <header class="site-nav">
+    <div class="container nav-container">
+      <a href="./index.html" class="nav-brand">
+        <span class="brand-monogram">JL</span>
+        <span>Jigme Lepcha</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="./index.html#about" class="nav-link">About</a></li>
+          <li><a href="./index.html#experience" class="nav-link">Experience</a></li>
+          <li><a href="./projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="./index.html#education" class="nav-link">Education</a></li>
+          <li><a href="./index.html#leadership" class="nav-link">Leadership</a></li>
+          <li><a href="./resume.html" class="nav-link">Resume</a></li>
+          <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle theme"></button>
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-kicker">Portfolio & Engagements</div>
+        <h1 class="section-title">Projects & Case Studies</h1>
+        <p class="section-subtitle">A curated collection of private equity consulting frameworks, financial valuations, mission-critical FinTech engineering, and applied machine learning models.</p>
+      </div>
+
+      <!-- Filter and Search Bar -->
+      <div class="filter-bar">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="consulting">Strategy & Consulting</button>
+          <button class="filter-btn" data-filter="finance">Corporate Valuation</button>
+          <button class="filter-btn" data-filter="software">Enterprise Software</button>
+          <button class="filter-btn" data-filter="ai">AI & Machine Learning</button>
         </div>
 
-        <hr/>
+        <div class="filter-search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="projectSearchInput" class="filter-search-input" placeholder="Search by title, tool, or metric...">
+        </div>
+      </div>
 
-        <div class="text-center">
-            <p style="font-size: 12px;">Built by <a style="color: inherit;" href="https://github.com/jiggylepcha/jiggylepcha.github.io">Jigme</a> with a bit of inspiration from <a style="color: inherit;" href="https://ankitsultana.com/researcher/">Ankit</a>.</p>
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- 1. EY-Parthenon CRM Evaluation -->
+        <div class="project-card" data-category="consulting">
+          <div>
+            <div class="project-meta">
+              <span class="project-category">Strategy & Consulting</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h2 class="project-title">Private Equity CRM Transformation & Vendor RFP</h2>
+            <div class="project-org">EY-Parthenon (Summer Associate Project)</div>
+            <p class="project-desc">
+              Evaluated 30+ CRM platforms for a prominent India-based private equity firm to streamline deal pipeline management, LP relations, and portfolio company monitoring. Built an end-to-end procurement framework anchored by 100+ KPIs across 7 strategic dimensions, parity-adjusted reference scoring (18+ calls), and executive dashboards. Secured Pre-Placement Offer (PPO).
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Private Equity</span>
+              <span class="project-tag">RFP Framework</span>
+              <span class="project-tag">100+ KPIs</span>
+              <span class="project-tag">Parity Scoring</span>
+              <span class="project-tag">Executive Dashboards</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <span class="badge badge-emerald">PPO Secured</span>
+            <span class="project-category">EY-Parthenon</span>
+          </div>
         </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    </body>
+        <!-- 2. Swiggy IPO Valuation -->
+        <div class="project-card" data-category="finance">
+          <div>
+            <div class="project-meta">
+              <span class="project-category">Corporate Valuation</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h2 class="project-title">Valuation of Swiggy IPO</h2>
+            <div class="project-org">IIM Kozhikode • Corporate Valuation Coursework</div>
+            <p class="project-desc">
+              Synthesized a comprehensive financial valuation model integrating Discounted Cash Flow (DCF), Comparable Company Multiples, Option Pricing Methods (OPM), and Venture Capital method to evaluate Swiggy's fair market value leading up to its public market listing. Analyzed quick-commerce unit economics and dark-store density dynamics.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">DCF Analysis</span>
+              <span class="project-tag">Relative Valuation</span>
+              <span class="project-tag">Option Pricing</span>
+              <span class="project-tag">VC Valuation</span>
+              <span class="project-tag">Quick Commerce</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <span class="badge badge-blue">Financial Modeling</span>
+            <span class="project-category">IIM Kozhikode</span>
+          </div>
+        </div>
+
+        <!-- 3. Bharti AXA & Clix Capital -->
+        <div class="project-card" data-category="consulting">
+          <div>
+            <div class="project-meta">
+              <span class="project-category">Strategy & Consulting</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h2 class="project-title">Employee Retention Levers & Attrition Strategy</h2>
+            <div class="project-org">Bharti AXA Life & Clix Capital (Havish M Consulting Live Project)</div>
+            <p class="project-desc">
+              Partnered with senior leadership and the CHRO function to tackle 40%+ attrition rates across critical business divisions. Conducted root-cause analytics across tenure, compensation benchmarks, and management spans to formulate predictive retention levers and productivity preservation roadmaps.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">People Strategy</span>
+              <span class="project-tag">CHRO Advisory</span>
+              <span class="project-tag">Attrition Risk</span>
+              <span class="project-tag">Retention Levers</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <span class="badge badge-purple">Live Consulting</span>
+            <span class="project-category">Havish M Consulting</span>
+          </div>
+        </div>
+
+        <!-- 4. Nucleus Software FinnOne Neo Migration Suite -->
+        <div class="project-card" data-category="software">
+          <div>
+            <div class="project-meta">
+              <span class="project-category">Enterprise Software</span>
+              <span class="project-year">2021 – 2024</span>
+            </div>
+            <h2 class="project-title">FinnOne Neo Collections Core Engine & Migration Pipelines</h2>
+            <div class="project-org">Nucleus Software Exports Ltd.</div>
+            <p class="project-desc">
+              Architected and maintained 28+ mission-critical SQL database migration scripts deployed across 30+ production and service pack releases for premier banks and NBFCs. Implemented 5-Why and Root Cause Analysis (RCA) to cut release bug reports by 43% and increase customer satisfaction scores by 13%.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">FinTech</span>
+              <span class="project-tag">SQL Migrations</span>
+              <span class="project-tag">Core Banking</span>
+              <span class="project-tag">RCA / 5-Why</span>
+              <span class="project-tag">Release Engineering</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <span class="badge badge-amber">41 Months Impact</span>
+            <span class="project-category">Nucleus Software</span>
+          </div>
+        </div>
+
+        <!-- 5. Forest Fire Prediction -->
+        <div class="project-card" data-category="ai">
+          <div>
+            <div class="project-meta">
+              <span class="project-category">AI & Machine Learning</span>
+              <span class="project-year">2018</span>
+            </div>
+            <h2 class="project-title">Forest Fire Prediction Web Platform</h2>
+            <div class="project-org">IIIT Delhi Research & Engineering</div>
+            <p class="project-desc">
+              Trained and deployed a machine learning model capable of predicting and classifying high-risk forest fire outbreak zones with 99.4% accuracy based on real-time atmospheric conditions, temperature, humidity, and wind patterns.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Machine Learning</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">99.4% Accuracy</span>
+              <span class="project-tag">Meteorological Data</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/vishaal27/ForestFirePrediction" target="_blank" rel="noopener noreferrer" class="project-link">
+              GitHub Repository ↗
+            </a>
+            <span class="project-category">IIIT Delhi</span>
+          </div>
+        </div>
+
+        <!-- 6. Eye Gaze Controlled Keyboard -->
+        <div class="project-card" data-category="ai">
+          <div>
+            <div class="project-meta">
+              <span class="project-category">AI & Machine Learning</span>
+              <span class="project-year">2019</span>
+            </div>
+            <h2 class="project-title">Eye Gaze Controlled Virtual Keyboard</h2>
+            <div class="project-org">IIIT Delhi • Human-Centered Systems (Grade A)</div>
+            <p class="project-desc">
+              Engineered an assistive human-computer typing interface using computer vision to track ocular gaze coordinates and deliberate eye-blink triggers, providing a hands-free communication tool for individuals with motor disabilities.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Computer Vision</span>
+              <span class="project-tag">OpenCV</span>
+              <span class="project-tag">Assistive Tech</span>
+              <span class="project-tag">Human-Centered Systems</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/jiggylepcha/gaze-controlled-keyboard" target="_blank" rel="noopener noreferrer" class="project-link">
+              GitHub Repository ↗
+            </a>
+            <span class="project-category">IIIT Delhi</span>
+          </div>
+        </div>
+
+        <!-- 7. Loan Application Software -->
+        <div class="project-card" data-category="software">
+          <div>
+            <div class="project-meta">
+              <span class="project-category">Enterprise Software</span>
+              <span class="project-year">2021</span>
+            </div>
+            <h2 class="project-title">Enterprise Loan Origination System</h2>
+            <div class="project-org">Nucleus Software Training Program</div>
+            <p class="project-desc">
+              Developed a full-stack loan origination and approval platform utilizing Spring Boot, Hibernate ORM, and relational database schemas to simulate end-to-end retail banking credit assessment workflows.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">Spring MVC</span>
+              <span class="project-tag">Hibernate</span>
+              <span class="project-tag">Relational DB</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/kanavbhagat/NucleusProject" target="_blank" rel="noopener noreferrer" class="project-link">
+              GitHub Repository ↗
+            </a>
+            <span class="project-category">Nucleus Software</span>
+          </div>
+        </div>
+
+        <!-- 8. Dishcounts Android Application -->
+        <div class="project-card" data-category="software">
+          <div>
+            <div class="project-meta">
+              <span class="project-category">Enterprise Software</span>
+              <span class="project-year">2018</span>
+            </div>
+            <h2 class="project-title">Dishcounts Coupon Management App</h2>
+            <div class="project-org">Independent Mobile Development</div>
+            <p class="project-desc">
+              An Android application that intercepts and parses promotional SMS messages from dining and retail merchants, categorizing coupons by expiration date, discount amount, and brand.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Android</span>
+              <span class="project-tag">Java</span>
+              <span class="project-tag">SMS Parsing</span>
+              <span class="project-tag">Mobile UX</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/jiggylepcha/Dishcounts" target="_blank" rel="noopener noreferrer" class="project-link">
+              GitHub Repository ↗
+            </a>
+            <span class="project-category">Android</span>
+          </div>
+        </div>
+
+        <!-- 9. Workout Effectiveness Classifier -->
+        <div class="project-card" data-category="ai">
+          <div>
+            <div class="project-meta">
+              <span class="project-category">AI & Machine Learning</span>
+              <span class="project-year">2018</span>
+            </div>
+            <h2 class="project-title">Workout Effectiveness Classifier</h2>
+            <div class="project-org">IIIT Delhi Machine Learning Lab</div>
+            <p class="project-desc">
+              Applied machine learning classification models to motion and sensor metrics, identifying exercise routines and scoring execution posture and workout effectiveness.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Machine Learning</span>
+              <span class="project-tag">Motion Sensor Data</span>
+              <span class="project-tag">Python</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/vishaal27/WorkoutEffectiveness" target="_blank" rel="noopener noreferrer" class="project-link">
+              GitHub Repository ↗
+            </a>
+            <span class="project-category">IIIT Delhi</span>
+          </div>
+        </div>
+
+        <!-- 10. Raspberry Pi Smart Alarm Clock -->
+        <div class="project-card" data-category="software">
+          <div>
+            <div class="project-meta">
+              <span class="project-category">Enterprise Software</span>
+              <span class="project-year">2018</span>
+            </div>
+            <h2 class="project-title">Raspberry Pi Smart Alarm Clock</h2>
+            <div class="project-org">Embedded Systems Project</div>
+            <p class="project-desc">
+              Built an interactive hardware alarm system utilizing a Raspberry Pi, integrating custom network schedules, auditory wake sequences, and sensor triggers.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Raspberry Pi</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">IoT / Hardware</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/jiggylepcha/SmartAlarm" target="_blank" rel="noopener noreferrer" class="project-link">
+              GitHub Repository ↗
+            </a>
+            <span class="project-category">Embedded IoT</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div>
+        <p>© 2026 Jigme Lobsang Lepcha. Hosted on GitHub Pages.</p>
+      </div>
+      <div class="footer-links">
+        <a href="./index.html#about">About</a>
+        <a href="./index.html#experience">Experience</a>
+        <a href="./projects.html">Projects</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./site.js"></script>
+</body>
 </html>
