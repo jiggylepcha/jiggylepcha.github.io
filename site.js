@@ -39,16 +39,44 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const navLinks = document.getElementById('navLinks');
   if (mobileMenuBtn && navLinks) {
+    const hamburgerIcon = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>`;
+    const closeIcon = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`;
+
+    function setMobileMenu(isOpen) {
+      navLinks.classList.toggle('open', isOpen);
+      mobileMenuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      mobileMenuBtn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      mobileMenuBtn.innerHTML = isOpen ? closeIcon : hamburgerIcon;
+    }
+
     mobileMenuBtn.addEventListener('click', () => {
       navLinks.classList.toggle('open');
       const isOpen = navLinks.classList.contains('open');
       mobileMenuBtn.setAttribute('aria-expanded', isOpen);
+      setMobileMenu(!isOpen);
     });
 
+    // Auto-close menu when tapping any navigation link
+    navLinks.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        setMobileMenu(false);
+      });
+    });
+
+    // Close on outside click
     document.addEventListener('click', (e) => {
       if (!mobileMenuBtn.contains(e.target) && !navLinks.contains(e.target)) {
         navLinks.classList.remove('open');
         mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        setMobileMenu(false);
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+        setMobileMenu(false);
+        mobileMenuBtn.focus();
       }
     });
   }

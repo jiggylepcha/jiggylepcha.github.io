@@ -653,10 +653,17 @@ p:last-child {
   flex-direction: column;
   justify-content: space-between;
   transition: border-color var(--transition-fast);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  scroll-margin-top: 5.5rem;
 }
 
 .case-card:hover {
   border-color: var(--border-dark);
+}
+
+.case-card:target {
+  border-color: var(--accent-navy);
+  box-shadow: 0 0 0 1px var(--accent-navy);
 }
 
 .case-header {
@@ -828,6 +835,13 @@ p:last-child {
   left: 0;
   color: var(--accent-gold);
   font-size: 0.8rem;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 1.5rem;
 }
 
 .academic-table {
@@ -1212,6 +1226,8 @@ p:last-child {
 
   .nav-links.open {
     display: flex;
+    max-height: calc(100vh - 4.25rem);
+    overflow-y: auto;
   }
 
   .mobile-menu-btn {
@@ -1250,5 +1266,35 @@ p:last-child {
 
   .resume-paper {
     padding: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .executive-summary-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .metric-item {
+    padding-left: 0.75rem;
+  }
+
+  .academic-table th, .academic-table td {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.8rem;
+  }
+
+  .filter-search-box {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
